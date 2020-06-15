@@ -1,4 +1,4 @@
-#NUmber
+#Number
 # phesp chia so nguyen + phep chia so thap phan
 num  = 4449999999999999999999999991111111111111122222222222222222222222222110999999
 puts num.size
@@ -8,8 +8,8 @@ puts num2.class
 # Để  phân cách hàng trăm hàng nghìn ta dùng "_"
 # irb(main):001:0> 1_000_000_000
 # => 1000000000
-# Nếu bắt đầu với sô 0 thì đó là hệ thập phân 
-#  Nếu bắt đầu với 0x or 0X thì nó thuộc hệ hexa 
+# Nếu bắt đầu với sô 0 thì đó là hệ thập phân  => .to_s(8)
+#  Nếu bắt đầu với 0x or 0X thì nó thuộc hệ hexa  => to_s(16)
 #  start width 0b or oB => binary 
 
 test = 0x1233
