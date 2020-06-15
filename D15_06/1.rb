@@ -70,6 +70,10 @@ puts str_g.gsub(/[a-z,A-Z]/,"*") #Thay 1 dua dau tien tim duoc
 # puts str_g.bsub("be","BAYBAY") # Thay toan bo
 puts str_g
 
+# insert 
+str_i = "hung"
+puts str_i.insert(4," dep trai")
+
 # Delete 
 # puts str_g.delete("yerR")
 puts str_g.tr("yerR","0@$^") # thay the tuy y theo thu tu
@@ -93,7 +97,10 @@ str2 = "Dep trai"
 # puts str1.concat(' ',str2)
 puts "#{str1} #{str2}"
 
-
+# // => / 
+# /' => '
+#/" => "
+# /t,/f,/n
 # DONE
 
 
