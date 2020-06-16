@@ -25,7 +25,7 @@ puts 1/2 - 1/4 == 1/4
 puts 0.8 - 0.7
 # Dấu chấm động biển diễn sai ở sô 0.1 n  
 # https://quantrimang.com/nhung-van-de-voi-tinh-toan-dau-cham-dong-32936
-# require 'bigdecimal'
+# is
 # puts BigDecimal("0.4") - BigDecimal("0.3") == 0.1
 
 # lam tron
