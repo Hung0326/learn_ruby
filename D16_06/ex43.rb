@@ -6,8 +6,8 @@ class Scene
 end
 
 class Engine 
-    def initialize(scene_map) #central_corridor
-        @scene_map = scene_map #central_corridor
+    def initialize(scene_map) #Map.new('central_corridor')
+        @scene_map = scene_map #Map.new('central_corridor')
     end
 
     def play()
@@ -22,7 +22,7 @@ class Engine
     end
 end
 
-class Death < Scene
+class Death 
     @@quips = [
         "You died. You kinda suck at this.",
         "Your mom would be proud...if she were smarter.",
@@ -35,7 +35,7 @@ class Death < Scene
     end
 end
 
-class CentralCorridor < Scene
+class CentralCorridor 
     def enter()
         puts "The Gothons of Planet Percal #25 have invaded your ship and destroyed"
         puts "your entire crew. You are the last surviving member and your last"
@@ -82,7 +82,7 @@ class CentralCorridor < Scene
     end
 end
 
-class LaserWeaponArmory < Scene
+class LaserWeaponArmory 
     def enter()
         puts "You do a dive roll into the Weapon, crouch and scan the room"
         puts "For more Gothons that might be hiding. It's dead quiet, to quiet."
@@ -118,7 +118,7 @@ class LaserWeaponArmory < Scene
     end
 end
 
-class TheBridge < Scene
+class TheBridge 
     def enter()
         puts "You burst onto the Bridge with the netron destruct bomb"
         puts "under your arm and surprise 5 Gothons who are trying to"
