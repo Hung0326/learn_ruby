@@ -1,6 +1,6 @@
 #Hash
 hs = {:name => "Hung Henry",:age=>"23",:gender=>"male"}
-# puts hs.length
+# puts hs.length 
 # puts hs[:name]
 # puts hs
 # puts hs[111].class
@@ -49,6 +49,7 @@ hs = {:name => "Hung Henry",:age=>"23",:gender=>"male"}
 # puts hs.key("23") #get key by value
 # puts hs.keys #show full key of hash
 # puts hs.values #show full value of hash
+
 h1 = {a:1,b:2,c:3,d:4}
 h2 = {a:1,c:3,k:100,l:22}
 puts h1.merge!(h2) 

@@ -39,8 +39,8 @@
 #     end
 #     puts "End"
 # end
-
 # b_method("Phuc",arr_p1) {|a,b|puts "Name #{a} is #{b} year old"}
+
 # Yield sẽ được gọi trong phần thân của 1 method 
 # Yield truyền được tham số
 # Yield sẽ thực hiện theo trình tự code từ trên xuống, khi chạy đến Yield method đó sẽ tiến hành chạy các dòng code trong yield,sau khi hoàn thành sẽ tiếp tục chạy code phía dưới nếu còn .

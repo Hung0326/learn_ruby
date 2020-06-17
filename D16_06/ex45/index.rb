@@ -25,8 +25,8 @@ class Magician < Hero
 end
 
 
-class Start_Game
-    
+
+class Start_Game    
     def Create_Figure
         @@genderx = ""
         puts "WELLCOM TO MY GAME"
@@ -54,6 +54,7 @@ class Start_Game
             puts "Gender : #{@@genderx}"
             puts "Level : #{figure_.lever}"
             puts "Point : #{figure_.point}"
+            puts "==============="
         elsif your_option == 2
             figure_ =  Magician.new("M1",name,@@genderx,1,100)
             puts "==============="
@@ -61,30 +62,13 @@ class Start_Game
             puts "Gender : #{@@genderx}"
             puts "Level : #{figure_.lever}"
             puts "Point : #{figure_.point}"
+            puts "==============="
         else
             puts "So sorry"
             exit(0)
         end
     end
 end
-class Map
-    @@scenes = {
-        'start' => CentralCorridor.new(),
-        'death' => Death.new(),
-        'finished' => Finished.new()
-    }
-    def initialize(start_scene)
-        @start_scene = start_scene
-    end
 
-    def next_scene(scene_name)
-        val = @@scenes[scene_name]
-        return val
-    end
-
-    def opening_scene()
-        return next_scene(@start_scene)
-    end
-end
 test = Start_Game.new()
 test.Create_Figure()
